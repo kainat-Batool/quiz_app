@@ -18,7 +18,8 @@ class _AnswerState extends State<Answer> {
     return Container(
       width: MediaQuery.of(context).size.width * 0.2,
       margin: EdgeInsets.all(10),
-      child: ElevatedButton(
+      child: MaterialButton(
+        color: Color(0xffB4909C),
         child: Text(widget.answerText),
         onPressed: () {
           widget.selectHandler();
